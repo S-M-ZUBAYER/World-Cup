@@ -98,6 +98,13 @@ body {
     background-color: #FFFFFF;
     color: #161616;
     margin-top: 25px;
+    /* text-decoration: none;
+    text-decoration: none; */
+}
+
+.nav_class a {
+    text-decoration: none;
+    color: #161616;
 }
 
 #blog_id {
