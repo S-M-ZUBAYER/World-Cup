@@ -63,56 +63,86 @@ body {
     margin: 50px 140px;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 400px, auto);
-    align-items: center;
+    grid-template-columns: 300px auto;
+
 }
 
 .nav_bar nav {
     list-style-type: none;
-    width: 252px;
-    height: 252px;
+    width: 250px;
+    height: 250px;
+}
+
+.nav_bar nav ul {
+    list-style-type: none;
 }
 
 .nav_bar {
-    width: 312px;
-    height: 312px;
+    width: 300px;
+    height: 300px;
     background: #161616;
     border-radius: 10px;
     color: white;
     margin-right: 12px;
+    margin-top: 50px;
+    padding-top: 10px;
 }
 
 .nav_class {
     width: 230px;
-    height: 60px;
+    height: 45px;
     font-size: 20px;
+    padding-top: 20px;
     text-align: center;
     border-radius: 10px;
     background-color: #FFFFFF;
     color: #161616;
-    margin-top: 30px
+    margin-top: 25px;
 }
 
 #blog_id {
     background-color: #DD0000;
+    color: #FFFFFF;
 }
 
 /* blog part */
 .all-blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+}
+
+.VS {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.match {
+    text-align: center;
+    width: 290px;
+    height: 242px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.flag_time {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 50px;
+    border-radius: 10px;
 }
 
 .blogs {
     margin-left: 12px;
-    margin-top: 50px;
-    background-color: aliceblue;
+    margin-top: 10px;
+    border: 1px solid #E8E8E8;
     border-radius: 10px;
 }
 
-.pic {
-    width: 312px;
-    height: 175px;
+.pic img {
+    width: 300px;
+    height: 150px;
 }
 
 .trans_btn {
@@ -126,9 +156,9 @@ body {
 
 .blog {
     color: #161616;
-    width: 272px;
+    width: 262px;
     height: 54px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     margin-left: 20PX;
     margin-top: 0px;
@@ -159,6 +189,7 @@ body {
     width: 1600px;
     height: 444px;
     color: #FFFFFF;
+
 }
 
 .goal {
@@ -167,7 +198,48 @@ body {
     font-weight: 600;
     font-size: 40px;
     text-align: center;
-    padding-left: 752;
-    padding-right: 752;
-    padding-top: 130;
+    padding-top: 100px;
+    margin: 130px 51px 50px 700px;
+}
+
+hr {
+    width: 1320px;
+    height: 0px;
+    margin: 50px 10px 50px 100px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+
+}
+
+.footer_nav {
+    color: #B9B9B9;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 50px 351px 50px 351px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+}
+
+.footer_nav nav p {
+    margin-left: 10px;
+}
+
+.icon_nav {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.fa-facebook {
+    margin-right: 10px;
+}
+
+.fa-linkedin {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fa-brands {
+    margin-left: 10px;
 }
