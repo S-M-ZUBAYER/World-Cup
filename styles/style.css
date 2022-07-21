@@ -1,14 +1,14 @@
-/* Google font */
+/* --------------------------------Google font added------------------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* common style */
+/* ------------------------------common style------------------ */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
-/* Header part */
+/*--------------------------------- Header part--------------------- */
 .container_1 {
     background-color: #161616;
     margin: 50px 140px;
@@ -18,7 +18,7 @@ body {
 }
 
 .heading {
-    margin: 84px 74px;
+    margin: 40px 30px;
     border-radius: 30px;
 }
 
@@ -36,14 +36,15 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #FFFFFF;
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .watch_btn {
     background-color: #DD0000;
     color: #FFFFFF;
-    width: 103px;
-    height: 23px;
+    /* width: 103px;
+    height: 23px; */
     font-weight: 400;
     font-size: 20px;
     padding: 10px 20px;
@@ -54,17 +55,43 @@ body {
 
 .heading_pic {
     width: 581px;
-    height: 500px;
+    height: 540px;
     background-color: #161616;
     border-radius: 10px;
 
 }
 
 .heading_pic img {
+    transition: 0.5s ease-in;
+}
+
+/*-------------------------------- Animate the Header part----------------------- */
+.container_1:hover .heading_pic img {
+    transform: rotate(-10deg);
+    transform-origin: bottom;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(12, 164, 25);
+    border-radius: 50px;
+    position: relative;
+    left: 580px;
+    top: 90px;
+    transition: transform 1s ease-out 0.6s;
+    z-index: 10;
+}
+
+.container_1:hover .ball {
+    transform: translate(-1000px, -200px);
+}
+
+.heading_pic img {
     width: 100%;
 }
 
-/* Main part */
+/*------------------------------------------- Main part------------------------------------ */
 .container_2 {
     margin: 50px 140px;
     border-radius: 20px;
@@ -104,8 +131,6 @@ body {
     background-color: #FFFFFF;
     color: #161616;
     margin-top: 25px;
-    /* text-decoration: none;
-    text-decoration: none; */
 }
 
 .nav_class a {
@@ -113,12 +138,12 @@ body {
     color: #161616;
 }
 
+/* ---------------------------Nav bar and nav bar view part  =--------------------------*/
 #blog_id {
     background-color: #DD0000;
     color: #FFFFFF;
 }
 
-/* blog part */
 .all-blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -184,7 +209,6 @@ body {
 .icon_part {
     display: flex;
     margin: 20PX;
-    /* justify-content: space-between; */
 
 }
 
@@ -200,7 +224,7 @@ body {
     padding-right: 10px;
 }
 
-/* footer part */
+/* --------------------------------footer part ----------------------------------*/
 .footer_class {
     background-color: #161616;
     width: 1600px;
@@ -238,10 +262,12 @@ hr {
     text-align: center;
 }
 
+/* ----------------------------------Nav bar  part in footer ----------------------------------*/
 .footer_nav nav p {
     margin-left: 10px;
 }
 
+/* -------------------------------------social icon added---------------------------------- */
 .icon_nav {
     text-align: center;
     font-size: 30px;
@@ -261,51 +287,4 @@ hr {
     margin-left: 10px;
 }
 
-/* make responsive for Mobile Device */
-@media screen and (max-width:640px) {
-    .container_1 {
-
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    .watch_btn {
-        background-color: #DD0000;
-        color: #FFFFFF;
-        width: 50px;
-        height: 10px;
-        font-weight: 400;
-        font-size: 20px;
-        padding: 5px 10px;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-top: 100px;
-    }
-
-    .container_2 {
-        width: 100%;
-
-    }
-
-    .heading_pic {
-        width: 100%;
-    }
-
-    .nav_bar {
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
-
-@media screen and (min-width:641px) and (max-width:1007px) {
-    .container_1 {
-        width: 734px;
-        height: 398px;
-    }
-
-    .nav_bar {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+/*-------------------------- make responsive for Mobile Device ----------------------------*/
