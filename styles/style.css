@@ -5,6 +5,7 @@
 /* common style */
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 /* Header part */
@@ -17,7 +18,8 @@ body {
 }
 
 .heading {
-    margin: 111px 106px;
+    margin: 84px 74px;
+    border-radius: 30px;
 }
 
 .heading_title {
@@ -52,10 +54,14 @@ body {
 
 .heading_pic {
     width: 581px;
-    height: 340px;
+    height: 500px;
     background-color: #161616;
     border-radius: 10px;
 
+}
+
+.heading_pic img {
+    width: 100%;
 }
 
 /* Main part */
@@ -140,6 +146,10 @@ body {
     border-radius: 10px;
 }
 
+.flag img {
+    width: 100%;
+}
+
 .blogs {
     margin-left: 12px;
     margin-top: 10px;
@@ -148,7 +158,7 @@ body {
 }
 
 .pic img {
-    width: 300px;
+    width: 100%;
     height: 150px;
 }
 
@@ -206,7 +216,7 @@ body {
     font-size: 40px;
     text-align: center;
     padding-top: 100px;
-    margin: 130px 51px 50px 700px;
+    margin: 130px 51px 50px 750px;
 }
 
 hr {
@@ -249,4 +259,53 @@ hr {
 
 .fa-brands {
     margin-left: 10px;
+}
+
+/* make responsive for Mobile Device */
+@media screen and (max-width:640px) {
+    .container_1 {
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .watch_btn {
+        background-color: #DD0000;
+        color: #FFFFFF;
+        width: 50px;
+        height: 10px;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 100px;
+    }
+
+    .container_2 {
+        width: 100%;
+
+    }
+
+    .heading_pic {
+        width: 100%;
+    }
+
+    .nav_bar {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (min-width:641px) and (max-width:1007px) {
+    .container_1 {
+        width: 734px;
+        height: 398px;
+    }
+
+    .nav_bar {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
